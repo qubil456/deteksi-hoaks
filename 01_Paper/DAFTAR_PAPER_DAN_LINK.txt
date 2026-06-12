@@ -1,0 +1,85 @@
+DAFTAR PAPER REFERENSI — DETEKSI HOAKS / FAKE NEWS
+====================================================
+Tema: deteksi berita hoaks, ML klasik (TF-IDF + NB/SVM/RF/LR)
+Cara pakai: buka link, unduh PDF, simpan di folder 01_Paper/ ini.
+PENTING:
+ - Verifikasi peringkat SINTA tiap jurnal di sinta.kemdikbud.go.id
+ - Pastikan minimal 10 paper dalam rentang 2021-2026 (ketentuan tugas)
+ - [OA] = Open Access, PDF bisa diunduh gratis (terverifikasi bisa diakses)
+ - [cek] = perlu Anda cek aksesnya / mungkin perlu login
+
+----------------------------------------------------
+PAPER ACUAN UTAMA (sumber dataset & metode yang direplikasi)
+----------------------------------------------------
+[0] Pratiwi, I.Y.R., Asmara, R.A., Rahutomo, F. (2017).
+    "Study of hoax news detection using naive bayes classifier in
+     Indonesian language." ICTS 2017 (IEEE), pp. 73-78.
+    DOI: 10.1109/ICTS.2017.8265649
+    Link: https://ieeexplore.ieee.org/document/8265649
+    Catatan: conference IEEE 2017 (di luar rentang 2021-2026).
+    Dataset: https://data.mendeley.com/datasets/p3hfgr5j3m/1 [OA, CC BY 4.0]
+
+----------------------------------------------------
+PAPER PENDUKUNG (2021-2026) — target minimal 10
+----------------------------------------------------
+[1] Aziz, A.K., Kusuma, J.W. (2025). "Penerapan Machine Learning untuk
+    Deteksi Hoaks di Media Sosial Indonesia: Systematic Literature Review."
+    CESS, Vol.10 No.2, pp.608-616. [OA - terverifikasi]
+    Unduh: https://jurnal.unimed.ac.id/2012/index.php/cess/article/view/66584
+
+[2] Hanum, A.R., dkk. (2024). "Analisis Kinerja Algoritma Klasifikasi Teks
+    BERT dalam Mendeteksi Berita Hoaks." JTIIK (Jurnal Teknologi Informasi
+    dan Ilmu Komputer), Vol.11 No.3, pp.537-546. [SINTA 2 — kuat]
+    DOI: 10.25126/jtiik938093
+    Link: https://jtiik.ub.ac.id  (cari judul di pencarian jurnal)
+
+[3] Wibowo, J.S., Wahyudi, E.N., Listiyono, H. (2024). "Performance
+    Comparison of SVM, Naive Bayes, and Random Forest Models in Fake News
+    Classification." Engineering and Technology Journal, 9(8), 4799-4804.
+    DOI: 10.47191/etj/v9i08.27
+    Link: https://everant.org/index.php/etj/article/view/1459
+
+[4] Aulia, dkk. "Implementasi Deteksi Berita Hoaks dan Fakta Menggunakan
+    Support Vector Machine Berbasis Website." Algoritma: Jurnal Ilmu
+    Komputer dan Informatika (UIN-SU). SVM akurasi 96,43%.
+    Link: https://jurnal.uinsu.ac.id/index.php/algoritma/article/view/29421
+
+[5] Prabowo, D., dkk. "Sistem Deteksi Berita Hoax Pemilu 2024 Indonesia
+    Menggunakan Algoritma KNN dan SVM." JIKO (Jurnal Informatika dan
+    Komputer). DOI: 10.26798/jiko.v9i1.1424
+    Link: https://dx.doi.org/10.26798/jiko.v9i1.1424
+
+[6] Fernandes, R.P., Shita, R.T. (2024). "Penerapan Metode SVM dan Random
+    Forest untuk Mendeteksi Berita Hoaks pada PT. Global Arrow."
+    Jurnal Ticom, 12(3), 102-107. DOI: 10.70309/ticom.v12i3.129
+    Link: https://jurnal-ticom.jakarta.aptikom.org/index.php/Ticom/article/view/129
+
+[7] Soleman, dkk. (2021). "Pemanfaatan Metode Klasifikasi Naive Bayes Untuk
+    Pendeteksi Berita Hoax Pada Artikel Berbahasa Indonesia."
+    Jurnal CoreIT (UIN Suska Riau).
+    Link: https://ejournal.uin-suska.ac.id/index.php/coreit/article/view/14290
+
+[8] (2025). "Analisis Efektivitas Algoritma Machine Learning dalam Deteksi
+    Hoaks: Pada Berita Digital Berbahasa Indonesia." JISKA, Vol.3 No.2.
+    MLP/NB/SVM/RF + TF-IDF.
+    Cari: judul di Google Scholar / repositori JISKA
+
+[9] (2024). "Klasifikasi Berita Hoax Pemilihan Umum Presiden RI 2024
+    Menggunakan Naive Bayes dan SVM." Jurnal Ilmiah Dinamika Rekayasa
+    (UNSOED). NB 97%, SVM 95%.
+    Link: https://jurnal.dinarek.unsoed.ac.id/index.php/main/article/view/27
+
+[10] Habibi, M.A., Rahmawati, D. (2025). "Sistem Deteksi Hoaks pada Berita
+    Online Menggunakan Metode Naive Bayes." Jurnal Riset Multidisiplin
+    Edukasi. Multinomial NB + TF-IDF, akurasi 97,26%.
+    Link: https://journal.hasbaedukasi.co.id/index.php/jurmie/article/view/837
+
+----------------------------------------------------
+CATATAN PENTING
+----------------------------------------------------
+- Daftar ini berisi paper NYATA (metadata dari penelusuran), TAPI Anda
+  WAJIB membuka & membaca PDF-nya sendiri sebelum menyitir.
+- Angka akurasi di atas dari abstrak/snippet; verifikasi di teks lengkap.
+- Cek SINTA tiap jurnal. Jika dosen wajib SINTA 1-2, prioritaskan JTIIK [2].
+- Beberapa link mungkin mengarah ke halaman artikel; klik tombol "PDF" /
+  "Download" di halaman tersebut.

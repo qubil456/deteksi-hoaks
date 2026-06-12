@@ -1,0 +1,7 @@
+{
+  "n_rows": 600,
+  "n_hoax": 228,
+  "n_valid": 372,
+  "text_col_source": "berita",
+  "label_col_source": "tagging"
+}

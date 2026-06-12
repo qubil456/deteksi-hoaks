@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+*.log
+*.sqlite3
+*.env
+.env
+bytecode/
+.venv/
+venv/
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+.ipynb_checkpoints/
+
+# Data files
+04_Dataset/Raw_Dataset/
+04_Dataset/*.csv
+
+# Ignore local editor settings
+.vscode/
+.idea/

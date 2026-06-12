@@ -1,0 +1,35 @@
+SUMBER DATASET
+==============
+
+Nama      : Indonesian Hoax News Detection Dataset
+Penyedia  : Rahutomo, F.; Yanuar, I.; Asmara, R.A. (2018)
+Repositori: Mendeley Data
+DOI       : 10.17632/p3hfgr5j3m.1
+Lisensi   : CC BY 4.0 (bebas dipakai dengan atribusi)
+Link      : https://data.mendeley.com/datasets/p3hfgr5j3m/1
+
+File yang dipakai untuk replikasi:
+  "600 news with valid hoax label.csv"
+  -> 600 teks berita berbahasa Indonesia, berlabel hoax / valid
+  -> Label final via voting 3 referee (12 topik berita)
+
+Paper acuan (sumber dataset & metode yang direplikasi):
+  I. Y. R. Pratiwi, R. A. Asmara, F. Rahutomo,
+  "Study of hoax news detection using naive bayes classifier in
+   Indonesian language," ICTS 2017, pp. 73-78.
+  DOI: 10.1109/ICTS.2017.8265649
+
+LANGKAH:
+  1. Buka link Mendeley di atas (publik, gratis, tanpa login untuk unduh).
+  2. Unduh file "600 news with valid hoax label.csv".
+  3. Letakkan di folder ini (04_Dataset/Raw_Dataset/).
+  4. Jalankan: python ../../05_Source_Code/Script/preprocessing.py
+
+WAJIB DICATAT (untuk dokumentasi reproduktibilitas):
+  Tanggal akses       : __________
+  Jumlah baris aktual : __________
+  Nama kolom teks     : __________
+  Nama kolom label    : __________
+
+CATATAN: Verifikasi status SINTA/indeksasi paper acuan di
+sinta.kemdikbud.go.id sebelum mengutip sebagai referensi utama.
