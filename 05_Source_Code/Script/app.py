@@ -11,20 +11,51 @@ import json
 import pickle
 from pathlib import Path
 import streamlit as st
+import pandas as pd
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.pipeline import Pipeline
+
 
 ROOT = Path(__file__).resolve().parent
-from config import MODEL_DIR, VIZ_DIR, DATA_PROCESSED, set_seed, SEED
+from config import MODEL_DIR, VIZ_DIR, DATA_PROCESSED, set_seed, SEED, TFIDF_PARAMS
 from preprocessing import clean_text
 
 MODEL_PATH = MODEL_DIR / "best_model_nb.pkl"
 LABEL_MAP = {0: "Valid", 1: "Hoax"}
 
 
+def build_model():
+    return Pipeline([("tfidf", TfidfVectorizer(**TFIDF_PARAMS)), ("clf", MultinomialNB(alpha=0.1))])
+
+
 def load_model():
     if not MODEL_PATH.exists():
         return None
-    with open(MODEL_PATH, "rb") as f:
-        return pickle.load(f)
+    try:
+        with open(MODEL_PATH, "rb") as f:
+            return pickle.load(f)
+    except Exception:
+        return None
+
+
+def train_model_from_data():
+    csv_path = DATA_PROCESSED / "clean.csv"
+    if not csv_path.exists():
+        return None
+    try:
+        df = pd.read_csv(csv_path)
+        if df.empty:
+            return None
+        model = build_model()
+        model.fit(df["text_clean"].astype(str).values, df["label"].astype(int).values)
+        MODEL_DIR.mkdir(parents=True, exist_ok=True)
+        with open(MODEL_PATH, "wb") as f:
+            pickle.dump(model, f)
+        return model
+    except Exception:
+        return None
 
 
 def predict_text(text: str, model) -> dict:
@@ -76,6 +107,8 @@ def main():
     st.subheader("Masukkan teks berita untuk dianalisis")
 
     model = load_model()
+    if model is None:
+        model = train_model_from_data()
     col1, col2 = st.columns([2, 1])
 
     with col1:
@@ -98,12 +131,13 @@ def main():
                 st.write("Preview tidak tersedia")
         else:
             st.write("Tidak ada `clean.csv`")
+            st.caption("Pastikan file `clean.csv` ada di folder `04_Dataset/Processed_Dataset` sebelum deploy.")
 
     if btn:
         if not text or not text.strip():
             st.warning("Masukkan beberapa kalimat berita terlebih dahulu.")
         elif model is None:
-            st.error("Model tidak ditemukan. Jalankan `train_eval.py` untuk membuat model.")
+            st.error("Model tidak ditemukan dan pelatihan otomatis gagal. Pastikan `clean.csv` tersedia di `04_Dataset/Processed_Dataset`.")
         else:
             with st.spinner("Sedang memprediksi..."):
                 res = predict_text(text, model)
