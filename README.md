@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Nama** | Abiansyah |
-| **NIM** | _(isi)_ |
+| **NIM** | 241730095 |
 | **Topik** | Deteksi berita hoaks bahasa Indonesia (NLP, ML klasik) |
 | **Metode usulan** | TF-IDF + Multinomial Naive Bayes |
 | **Baseline** | TF-IDF + Linear SVM, TF-IDF + Logistic Regression |
