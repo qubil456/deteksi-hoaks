@@ -1,9 +1,10 @@
 {
-  "model": "Naive Bayes (usulan)",
-  "scheme": "80-20",
-  "alpha": 0.01,
-  "accuracy": 0.7333,
-  "precision": 0.64,
-  "recall": 0.6957,
-  "f1": 0.6667
+  "best_alpha": 0.001,
+  "cv_scores": {
+    "0.001": 1.0,
+    "0.01": 1.0,
+    "0.1": 1.0,
+    "0.5": 1.0,
+    "1.0": 1.0
+  }
 }

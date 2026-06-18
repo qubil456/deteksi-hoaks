@@ -1,7 +1,8 @@
 {
-  "n_rows": 600,
-  "n_hoax": 228,
-  "n_valid": 372,
-  "text_col_source": "berita",
-  "label_col_source": "tagging"
+  "total": 250,
+  "valid": 150,
+  "hoax": 100,
+  "sastrawi": false,
+  "max_features": 5000,
+  "seed": 42
 }
