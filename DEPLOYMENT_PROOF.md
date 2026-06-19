@@ -165,14 +165,15 @@ docker run -p 8501:8501 hoax-detector:latest
 
 | Attribute | Value |
 |-----------|-------|
-| Algorithm | Multinomial Naive Bayes (α=0.1) |
+| Algorithm | Multinomial Naive Bayes (α=0.01) |
 | Vectorizer | TF-IDF (max_features=5000, unigram) |
-| Dataset Size | 600 samples |
-| Hoax/Valid | 228 / 372 (balanced) |
-| Accuracy | ~72.8% |
-| Precision | ~61.7% |
-| Recall | ~68.7% |
-| F1-Score | ~65.2% |
+| Dataset Size | 250 samples |
+| Hoax/Valid | 91 / 159 |
+| Accuracy | ~66.2% (avg, 3 splits) |
+| Precision | ~54.2% |
+| Recall | ~33.6% |
+| F1-Score | ~41.4% |
+| Best split | 60-40, α=0.01 → Acc=70.0%, F1=50.0% |
 
 ---
 
