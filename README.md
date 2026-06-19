@@ -23,9 +23,9 @@ Rata-rata antar 3 skema split (60-40, 70-30, 80-20):
 
 | Model | Accuracy | Precision | Recall | F1 |
 |---|---|---|---|---|
-| SVM (baseline) | 0.743 | 0.669 | 0.639 | 0.654 |
-| Naive Bayes (usulan) | 0.722 | 0.621 | 0.687 | 0.652 |
-| Logistic Regression (baseline) | 0.728 | 0.765 | 0.411 | 0.533 |
+| SVM (baseline) | 0.686 | 0.607 | 0.349 | 0.442 |
+| Naive Bayes (usulan) | 0.662 | 0.542 | 0.336 | 0.414 |
+| Logistic Regression (baseline) | 0.658 | 0.566 | 0.182 | 0.273 |
 
 Model NB terbaik: split 80-20, alpha=0.01 → accuracy 0.733, F1 0.667.
 Detail lengkap: `07_Hasil_Eksperimen/hasil_replikasi.csv`.
